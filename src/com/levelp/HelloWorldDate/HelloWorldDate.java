@@ -2,7 +2,11 @@ package com.levelp.HelloWorldDate;
 
 import java.util.*;
 //: object/HelloWorldDate.java
-/** HelloWorldDate */
+/** HelloWorldDate
+ * @author Vlad
+ * @version 1.0
+ * */
+
 public  class HelloWorldDate {
     /** println*/
     public static void main(String[] args) {
