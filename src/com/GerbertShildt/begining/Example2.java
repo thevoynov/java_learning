@@ -1,4 +1,4 @@
-package com.GerbertShildt;
+package com.GerbertShildt.begining;
 
 /*
 Демонострация использования пременных.

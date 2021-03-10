@@ -1,4 +1,4 @@
-package com.GerbertShildt;
+package com.GerbertShildt.begining;
 /*
 Это пример простой программы на JAVA.
  */
