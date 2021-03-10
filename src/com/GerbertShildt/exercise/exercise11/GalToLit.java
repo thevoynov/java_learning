@@ -1,4 +1,4 @@
-package com.GerbertShildt.exercise11;
+package com.GerbertShildt.exercise.exercise11;
 /*
     Упражнение 1.1
 

@@ -3,7 +3,7 @@ package com.GerbertShildt.begining;
 class BlockDemo {
     public static void main(String args[]) {
         int i, j, d;
-        i = 5;
+        i = 0;
         j = 10;
 
         // Телом этой инструкции if является целый блок кода
