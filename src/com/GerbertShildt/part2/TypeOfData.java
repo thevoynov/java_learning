@@ -1,6 +1,6 @@
-package com.JavaCourse.FirstLesson;
+package com.GerbertShildt.part2;
 
-public class FirstLesson {
+public class TypeOfData {
     public static void main(String[] args) {
 
         //byte(1 байт), shot(2 байта), int(4 байта), long(8 байт) - количаство байт у различных типов данных
@@ -29,17 +29,6 @@ public class FirstLesson {
         d = Long.MIN_VALUE;
         System.out.println("long = " + d + " bit.");
 
-/*        printBinary(a,32);
-        a = Integer.MAX_VALUE;
-        printBinary(a,32);*/
     }
 
-/*    private static void printBinary(int value, int size) {
-        for (int i = size - 1; i >= 0; i--) {
-            long mask = 1 << i;
-            long result = (mask & value) >> i;
-            System.out.print(result);
-        }
-        System.out.println();
-    }*/
 }
