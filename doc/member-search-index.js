@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.levelp.HelloWorldDate","c":"HelloWorldDate","l":"HelloWorldDate()","url":"%3Cinit%3E()"},{"p":"com.levelp.HelloWorldDate","c":"HelloWorldDate","l":"main(String[])","url":"main(java.lang.String[])"}]
