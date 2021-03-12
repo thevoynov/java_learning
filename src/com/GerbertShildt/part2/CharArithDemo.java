@@ -8,7 +8,5 @@ class CharArithDemo {
         System.out.println("Теперь ch содержит " + ch);
         ch = 90;    //  присвоить переменной ch значение 'Z'
         System.out.println("Теперь ch содержит " + ch);
-
-
     }
 }

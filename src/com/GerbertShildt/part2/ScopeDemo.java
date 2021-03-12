@@ -1,5 +1,7 @@
 package com.GerbertShildt.part2;
 
+//  Демонстрация области действия блока кода
+
 class ScopeDemo {
     public static void main(String args[]) {
         int x;  //  Эта переменная доступна для всего кода в
@@ -8,7 +10,8 @@ class ScopeDemo {
         if(x == 10) {
             int y = 20; //  Эта переменная доступна только
                         //  в данном блоке
-            //  Обе переменные "x" и "y" доступны в данном блоке кода
+                        //  Обе переменные "x" и "y" доступны
+                        //  в данном блоке кода
             System.out.println("x и y: " + x + " " + y);
             x = y + 2;
         }
