@@ -12,7 +12,6 @@ class Prime {
                 //  Если число делиться без остатка, значит оно не простое
                 if ((i%j) == 0)
                     isprime = false;
-
                 if(isprime)
                      System.out.println(i + " - простое число.");
 
