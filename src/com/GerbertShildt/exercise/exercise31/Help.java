@@ -29,6 +29,7 @@ class Help {
                 break;
             default:
                 System.out.println("Запрос не найден.");
+
         }
     }
 }
