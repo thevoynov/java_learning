@@ -1,4 +1,4 @@
-package com.GerbertShildt.begining;
+package com.GerbertShildt.part1;
 /*
     Демонстрация различий между типами int и double.
 

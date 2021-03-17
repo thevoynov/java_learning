@@ -1,4 +1,4 @@
-package com.GerbertShildt.begining;
+package com.GerbertShildt.part1;
 /*
     Демонстрация применения цикла for.
     Присвойте файлу с исходным кодом имя ForDemo.java.

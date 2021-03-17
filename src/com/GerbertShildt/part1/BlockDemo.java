@@ -1,4 +1,4 @@
-package com.GerbertShildt.begining;
+package com.GerbertShildt.part1;
 
 class BlockDemo {
     public static void main(String args[]) {

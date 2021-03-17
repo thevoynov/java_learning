@@ -1,4 +1,4 @@
-package com.GerbertShildt.begining;
+package com.GerbertShildt.part1;
 
 class IfDemo {
     public static void main(String args[]) {
