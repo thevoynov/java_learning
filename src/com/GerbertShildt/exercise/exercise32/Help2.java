@@ -2,6 +2,7 @@ package com.GerbertShildt.exercise.exercise32;
 
 import java.io.IOException;
 
+
 /*
     Справочная система об if, switch, for, while, do-while
  */
