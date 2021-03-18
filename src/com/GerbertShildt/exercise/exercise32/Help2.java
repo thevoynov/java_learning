@@ -3,18 +3,19 @@ package com.GerbertShildt.exercise.exercise32;
 import java.io.IOException;
 
 /*
-    Справочная система об if и switch
+    Справочная система об if, switch, for, while, do-while
  */
 class Help2 {
     public static void main(String args[]) throws IOException {
 
         char choice, ignore;
         do {
-            System.out.println("Справка:\n1. if" +
+            System.out.println("Справка:" +
+                            "\n1. if" +
                             "\n2. switch" +
                             "\n3. for" +
                             "\n4. while" +
-                            "\n5.do-while" +
+                            "\n5. do-while" +
                             "\nВыберите:");
             choice = (char) System.in.read();
             do {
@@ -27,15 +28,15 @@ class Help2 {
             case '1':
                 System.out.println("Инструкция для if:" +
                         "\nif(условие)" +
-                        "\n инструкция" +
+                        "\n инструкция;" +
                         "\nelse" +
-                        "\n инструкция");
+                        "\n инструкция;");
                 break;
             case '2':
                 System.out.println("Инструкция для switch:" +
                         "\nswitch(выражение) {" +
                         "\n case константа {" +
-                        "\n 2последовательность инструкций" +
+                        "\n 2последовательность инструкций;" +
                         "\n break;" +
                         "\n -//- ..." +
                         "\n }" +
@@ -49,7 +50,7 @@ class Help2 {
             case '4':
                 System.out.println("Инструкция для while:" +
                         "\nwhile(условие) " +
-                        "\n инструкция");
+                        "\n инструкция;");
                 break;
             case '5':
                 System.out.println("Инструкция для do-while:" +
