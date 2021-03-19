@@ -27,7 +27,6 @@ public class SymbolCount {
                 System.out.println(t + "-ая попытка");
                 System.out.println("Нет! Попробуйте ещё.");
             }
-
             do {
                 ignore = (char) System.in.read();
             }   while (ignore != '\n');
