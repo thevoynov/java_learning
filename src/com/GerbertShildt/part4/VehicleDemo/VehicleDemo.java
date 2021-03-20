@@ -16,7 +16,7 @@ class VehicleDemo {
         //  Расчёт дальности поездки с полным баком горючего
         range = minivan.fuelcap * minivan.mpg;
         System.out.println("Мини-фургон может перевезти "
-                + minivan.passangers + " пассажиров на расстояние "
+                + minivan.passangers + " пассажиров\nна расстояние "
                 + range + " миль");
     }
 

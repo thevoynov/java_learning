@@ -1,14 +1,17 @@
-package com.GerbertShildt.part4.TwoVehicles;
+package com.GerbertShildt.part4.AddMeth;
+
 class Vehicle {
     int passangers; //  количество пассажиров
     int fuelcap;    //  ёмкость топливного бака
     int mpg;        //  потребление топлива в милях на галлон
+    void range() {
+        System.out.println("Дальность - " + fuelcap * mpg + " мили.");
+    }
 }
-class TwoVehicles {
-
+public class AddMeth {
     public static void main(String args[]) {
-        Vehicle minivan = new Vehicle();
-        Vehicle sportscar = new Vehicle();
+        com.GerbertShildt.part4.AddMeth.Vehicle minivan = new com.GerbertShildt.part4.AddMeth.Vehicle();
+        com.GerbertShildt.part4.AddMeth.Vehicle sportscar = new com.GerbertShildt.part4.AddMeth.Vehicle();
 
         int range1, range2;
 
@@ -27,9 +30,10 @@ class TwoVehicles {
         System.out.println("Мини-фургон может перевезти "
                 + minivan.passangers + " пассажиров\nна расстояние "
                 + range1 + " мили.");
+        minivan.range();
         System.out.println("Спортивный автомобиль может перевезти "
                 + sportscar.passangers + " пассажиолв\nна расстояние "
                 + range2 + " мили.");
+        sportscar.range();
     }
-
 }
