@@ -19,6 +19,4 @@ class VehicleDemo {
                 + minivan.passangers + " пассажиров\nна расстояние "
                 + range + " миль");
     }
-
-
 }
