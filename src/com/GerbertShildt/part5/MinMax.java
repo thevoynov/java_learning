@@ -2,9 +2,11 @@ package com.GerbertShildt.part5;
 
 public class MinMax {
     public static void main(String args[]) {
-        int nums[] = new int[10];
+//        int nums[] = new int[10];
+        int nums[] = {99, -10, 10123, 18, -978,
+                        5623, 463, -9, 287, 49};
         int min, max;
-
+/*
         nums[0] = 99;
         nums[1] = -10;
         nums[2] = 10123;
@@ -15,6 +17,7 @@ public class MinMax {
         nums[7] = -9;
         nums[8] = 287;
         nums[9] = 49;
+*/
 
         min = max = nums[0];
         for(int i = 1; i<10; i++) {
