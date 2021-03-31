@@ -16,5 +16,7 @@ public class Light {
         System.out.print("За " + days);
         System.out.print(" дней свет пройдё около ");
         System.out.println(distance + " миль.");
+
+
     }
 }
