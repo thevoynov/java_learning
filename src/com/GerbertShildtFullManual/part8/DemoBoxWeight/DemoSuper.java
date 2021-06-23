@@ -34,10 +34,5 @@ class DemoSuper {
         System.out.println("Объём mycube равен " + vol);
         System.out.println("Вес mycube равен " + mycube.weight);
         System.out.println();
-
-
-
-
-
     }
 }
