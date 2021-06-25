@@ -21,8 +21,6 @@ class OtherPackage {
         com.GerbertShildtFullManual.part9.Demo.p1.Protection p
                 = new com.GerbertShildtFullManual.part9.Demo.p1.Protection();
         System.out.println("Конструктор из другого пакета");
-
-
     }
 }
 
