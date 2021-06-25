@@ -29,7 +29,7 @@ class OtherPackage {
 
 public class Demo {
     public static void main(String args[]) {
-        com.GerbertShildtFullManual.part9.Demo.p2.Protection2 ob1 = new com.GerbertShildtFullManual.part9.Demo.p2.Protection2();
-        com.GerbertShildtFullManual.part9.Demo.p2.OtherPackage ob2 = new com.GerbertShildtFullManual.part9.Demo.p2.OtherPackage();
+        Protection2 ob1 = new Protection2();
+       OtherPackage ob2 = new OtherPackage();
     }
 }
