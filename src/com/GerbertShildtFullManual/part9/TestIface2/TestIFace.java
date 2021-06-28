@@ -21,6 +21,7 @@ class AnotherClient implements Callback {
 class TestIFace {
     public static void main(String args[]) {
         Callback c = new Client();
+
         AnotherClient ob = new AnotherClient();
         
         ((Client) c).callback(42);
@@ -28,5 +29,7 @@ class TestIFace {
                 // объект типа AnotherClient
         
         ((AnotherClient) c).callback(42);
+
+
     }
 }
