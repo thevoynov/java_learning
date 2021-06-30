@@ -1,6 +1,5 @@
-package com.Alishev.Lesson37;
+package com.Alishev.Beginning.Lesson37;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Exception2 {

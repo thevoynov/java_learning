@@ -1,6 +1,4 @@
-package com.Alishev.Lesson37;
-
-import java.util.Scanner;
+package com.Alishev.Beginning.Lesson37;
 
 public class ScannerException extends Exception {
     public ScannerException(String description) {

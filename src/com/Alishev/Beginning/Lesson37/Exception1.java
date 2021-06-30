@@ -1,4 +1,4 @@
-package com.Alishev.Lesson37;
+package com.Alishev.Beginning.Lesson37;
 
 import java.io.File;
 import java.io.FileNotFoundException;
