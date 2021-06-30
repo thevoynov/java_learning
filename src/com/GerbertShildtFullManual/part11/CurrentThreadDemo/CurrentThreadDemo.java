@@ -1,4 +1,4 @@
-package com.GerbertShildtFullManual.part11;
+package com.GerbertShildtFullManual.part11.CurrentThreadDemo;
 
 class CurrentThreadDemo {
     public static void main(String[] args) {

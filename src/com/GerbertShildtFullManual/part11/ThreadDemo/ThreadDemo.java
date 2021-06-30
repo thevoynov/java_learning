@@ -1,4 +1,4 @@
-package com.GerbertShildtFullManual.part11;
+package com.GerbertShildtFullManual.part11.ThreadDemo;
 //  создать второй поток исполнения
 class NewThread implements Runnable {
     Thread t;
