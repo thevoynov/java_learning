@@ -5,11 +5,11 @@ package com.GerbertShildtFullManual.part11.Synch;
 class Callme {
     synchronized void call(String msg) {
         System.out.print("["+msg);
-/*        try {
+        try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             System.out.println("Прервано");
-        }*/
+        }
         System.out.println("]");
     }
 }
@@ -26,7 +26,9 @@ class Caller implements Runnable {
         t.start();
     }
     public  void run() {
-        target.call(msg);
+        synchronized (target) {
+            target.call(msg);
+        }
     }
 }
 
@@ -39,7 +41,7 @@ class Synch {
 
         //  ожидать завершения потока исполнения
         try {
-            ob1.t.join();
+//            ob1.t.join();
             ob2.t.join();
             ob3.t.join();
         } catch (InterruptedException e) {
