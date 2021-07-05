@@ -13,7 +13,7 @@ public class Test {
             executorService.submit(new Work(i));
 
          executorService.shutdown();
-         System.out.println("All tasks submitted");
+         System.out.println("All tasks submitt ed");
 
          executorService.awaitTermination(1, TimeUnit.DAYS);
 

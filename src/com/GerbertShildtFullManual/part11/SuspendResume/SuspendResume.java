@@ -1,6 +1,8 @@
 package com.GerbertShildtFullManual.part11.SuspendResume;
+
 //  Приостановка и возобновление исполнения
 //  потока современным способом
+
 /*
 class NewThread implements Runnable {
     String name;    //  имя потока исполнения
