@@ -13,6 +13,7 @@ public class Multidimensional_arrays {
             }
             System.out.println();
         }
+
         System.out.println(matrice[2][2]);
         System.out.println(matrice[1][0]);
 
