@@ -1,6 +1,4 @@
-package com.Alishev.AdvancedJava.LearnSinchronized;
-
-import java.util.Scanner;
+package com.Alishev.AdvancedJava.Multithreating.LearnSinchronized;
 
 
 public class Test {

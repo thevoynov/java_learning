@@ -1,4 +1,4 @@
-package com.Alishev.AdvancedJava.Multithreading;
+package com.Alishev.AdvancedJava.Multithreating.Multithreading;
 
 public class Test {
     public static void main(String args[]) throws InterruptedException {
