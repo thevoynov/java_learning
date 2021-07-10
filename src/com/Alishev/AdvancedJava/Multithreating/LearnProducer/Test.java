@@ -1,4 +1,4 @@
-package com.Alishev.AdvancedJava.LearnProducer;
+package com.Alishev.AdvancedJava.Multithreating.LearnProducer;
 
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;

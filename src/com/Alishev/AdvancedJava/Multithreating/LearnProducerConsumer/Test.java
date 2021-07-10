@@ -1,4 +1,4 @@
-package com.Alishev.AdvancedJava.LearnProducerConsumer;
+package com.Alishev.AdvancedJava.Multithreating.LearnProducerConsumer;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

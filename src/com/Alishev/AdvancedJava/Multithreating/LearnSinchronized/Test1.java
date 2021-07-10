@@ -1,4 +1,4 @@
-package com.Alishev.AdvancedJava.LearnSinchronized;
+package com.Alishev.AdvancedJava.Multithreating.LearnSinchronized;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

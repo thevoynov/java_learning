@@ -1,11 +1,11 @@
 package com.Alishev.Beginning.Lesson45;
 
-import com.Alishev.Beginning.Lesson11.Arrays;
+
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-
+import java.util.Arrays;
 
 public class ReadObject {
     public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class ReadObject {
             for(int i = 0; i < personCount; i++) {
                 people[i] = (Person) ois.readObject();
             }
-//            System.out.println(Arrays.toString(people));
+            System.out.println(Arrays.toString(people));
             ois.close();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

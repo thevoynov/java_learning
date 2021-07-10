@@ -1,4 +1,4 @@
-package com.Alishev.AdvancedJava.LearnVolatile;
+package com.Alishev.AdvancedJava.Multithreating.LearnVolatile;
 
 import java.util.Scanner;
 

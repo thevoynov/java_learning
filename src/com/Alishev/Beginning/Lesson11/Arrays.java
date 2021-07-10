@@ -1,5 +1,7 @@
 package com.Alishev.Beginning.Lesson11;
 
+import com.Alishev.Beginning.Lesson45.Person;
+
 public class Arrays {
     public static void main(String[] args) {
         int number = 10;                //  приметивный тип данных
@@ -17,4 +19,5 @@ public class Arrays {
                     + " равна " + numbers[i]);
         }*/
     }
+
 }
