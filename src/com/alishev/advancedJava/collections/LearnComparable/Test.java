@@ -1,6 +1,5 @@
-package com.Alishev.advancedJava.collections.LearnComparable;
+package com.alishev.advancedJava.collections.LearnComparable;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Test {

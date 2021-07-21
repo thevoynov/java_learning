@@ -1,4 +1,4 @@
-package com.Alishev.advancedJava.collections.LearnQueue;
+package com.alishev.advancedJava.collections.LearnQueue;
 
 import java.util.LinkedList;
 import java.util.Queue;

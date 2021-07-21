@@ -1,4 +1,4 @@
-package com.Alishev.advancedJava.collections.LearnComparator;
+package com.alishev.advancedJava.collections.LearnComparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
