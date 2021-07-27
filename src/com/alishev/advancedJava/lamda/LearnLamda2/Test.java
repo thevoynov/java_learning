@@ -90,7 +90,7 @@ public class Test {
         set.add(1);
         set.add(2);
         set.add(5);
-
+        //
         System.out.println(set);
         set = set.stream().map(a -> a * 3)
                 .collect(Collectors.toSet());
