@@ -12,6 +12,7 @@ public class Solution {
     public static Map<String, String> createMap() {
 
         Map<String, String> map = new HashMap<>();
+
         map.put("Иванов", "Иван1");
         map.put("Инов", "Иван");
         map.put("Ивов", "Иван3");
@@ -23,7 +24,9 @@ public class Solution {
         map.put("Иванысов", "Ива8");
         map.put("Иванков", "Иван");
         map.put("Иванров", "Иван10");
+
         //напишите тут ваш код
+
         return map;
     }
 

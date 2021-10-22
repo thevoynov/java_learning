@@ -7,6 +7,7 @@ import java.util.*;
 
 public class Solution {
     public static Map<String, Date> createMap() throws ParseException {
+
         DateFormat dateFormat = new SimpleDateFormat("MMMMM d yyyy", Locale.ENGLISH);
         Map<String, Date> map = new HashMap<>();
 
@@ -27,7 +28,10 @@ public class Solution {
     }
 
     public static void removeAllSummerPeople(Map<String, Date> map) throws ParseException {
-        Map<String, Date> copy = map;
+
+
+        Map<String, Date> copy = new HashMap<>(map);
+
         for(Map.Entry<String, Date> s : copy.entrySet()) {
             if(s.getValue().toString().contains("Jun")) {
                 map.remove(s.getKey());
