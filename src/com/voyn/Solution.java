@@ -1,35 +1,43 @@
 package com.voyn;
 
-import java.math.BigInteger;
-import java.util.HashSet;
-import java.util.Set;
+
+
 
 public class Solution {
-    public static void main(String[] args) {
-        System.out.println(getRadix("121"));        //expected output: [3, 27, 13, 15]
-        System.out.println(getRadix("2332"));        //expected output: [6]
-        System.out.println(getRadix("-2332"));       //expected output: []
+    public static void main(String[] args) throws Exception {
+        int[] data = new int[]{1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
+
+        Pair<Integer, Integer> result = getMinimumAndIndex(data);
+
+        System.out.println("The minimum is " + result.x);
+        System.out.println("The index of the minimum element is " + result.y);
     }
 
-    private static Set<Integer> getRadix(String number) {
-        // С помощью Biginteger конвертируем переданное число в желаемую систему исчисления (от 2 до 36 включительно)
-        Set<Integer> mySet = new HashSet<>();
-        BigInteger num = null;
-        try {
-            num = new BigInteger(number);
-        } catch (Exception e) {
-            return mySet;
+    public static Pair<Integer, Integer> getMinimumAndIndex(int[] array) {
+        int min = Integer.MAX_VALUE;
+        int index = 0;
+        if (array == null || array.length == 0) {
+            return new Pair<Integer, Integer>(null, null);
         }
-        String convertedNumber = "";
-        String reversed = "";
-        for (int i = 2; i <= 36; i++) {
-            convertedNumber = num.toString(i); // вот тут происходит конвертация в систему исчисления i
-            reversed = new StringBuffer(convertedNumber).reverse().toString(); // переворачиваем полученное число
-            // Сравниваем оба числа и смотрим палиндром ли это
-            if (convertedNumber.equals(reversed)) {
-                mySet.add(i);
+
+        for(int i = 0; i < array.length; i++) {
+            if(array[i] < min) {
+                min = array[i];
+                index = i;//напишите тут ваш код
             }
         }
-        return mySet;
+
+        return new Pair<Integer, Integer>(min, index);
+    }
+
+
+    public static class Pair<X, Y> {
+        public X x;
+        public Y y;
+
+        public Pair(X x, Y y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }
