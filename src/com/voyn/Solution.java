@@ -5,69 +5,25 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+
+/*
+Переходим дорогу вслепую
+*/
+
 public class Solution {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-    }
-
-    //может двигаться
-    public interface Movable {
-        void move();
-    }
-
-    //может быть съеден
-    public interface Edible {
-        void beEaten();
-    }
-
-    //может кого-нибудь съесть
-    public interface Eat {
-        void eat();
-    }
-
-    public class Dog implements Movable, Eat {
-
-        @Override
-        public void move() {
-
-        }
-
-        @Override
-        public void eat() {
-
-        }
-    }
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 
-    public class Cat implements Movable, Edible, Eat {
+            if(60 % Float.parseFloat(reader.readLine()) == 2.5)
+                System.out.println("зелёный");
+            else if(Float.parseFloat(reader.readLine()) == 3)
+                System.out.println("жёлтый");
+            else if(Float.parseFloat(reader.readLine()) == 4)
+                System.out.println("красный");
+            else if(Float.parseFloat(reader.readLine()) == 5)
+                System.out.println("зелёный");
 
-        @Override
-        public void move() {
-
-        }
-
-        @Override
-        public void beEaten() {
-
-        }
-
-        @Override
-        public void eat() {
-
-        }
-    }
-
-
-    public class Mouse implements Movable, Edible {
-
-        @Override
-        public void move() {
-
-        }
-
-        @Override
-        public void beEaten() {
-
-        }
     }
 }
