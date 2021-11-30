@@ -4,6 +4,9 @@ import java.awt.*;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 
 /*
@@ -12,18 +15,21 @@ import java.io.InputStreamReader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        String s;
+        int a;
 
-            if(60 % Float.parseFloat(reader.readLine()) == 2.5)
-                System.out.println("зелёный");
-            else if(Float.parseFloat(reader.readLine()) == 3)
-                System.out.println("жёлтый");
-            else if(Float.parseFloat(reader.readLine()) == 4)
-                System.out.println("красный");
-            else if(Float.parseFloat(reader.readLine()) == 5)
-                System.out.println("зелёный");
+
+
+            s = reader.readLine();
+            a = Integer.parseInt(reader.readLine());
+
+            if(a > 20)
+                System.out.println("И 18-ти достаточно");
+
+
+        //напишите тут ваш код
 
     }
 }
