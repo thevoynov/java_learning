@@ -18,67 +18,37 @@ import java.util.Locale;
 
 public class Solution {
     public static void main(String[] args) {
-        Robot amigo = new Robot("Амиго");
-        Robot enemy = new Robot("Сгибальщик-02");
-
-        doMove(amigo, enemy);
-        doMove(amigo, enemy);
-        doMove(enemy, amigo);
-        doMove(amigo, enemy);
-        doMove(enemy, amigo);
-        doMove(amigo, enemy);
-        doMove(enemy, amigo);
-        doMove(amigo, enemy);
+        System.out.println(new Today(WeatherType.CLOUDY));
+        System.out.println(new Today(WeatherType.FOGGY));
+        System.out.println(new Today(WeatherType.FREEZING));
     }
 
-    public static class Robot extends AbstractRobot {
+    public interface Weather {
+        String getWeatherType();
+    }
+
+    public interface WeatherType {
+        String CLOUDY = "Cloudy";
+        String FOGGY = "Foggy";
+        String FREEZING = "Freezing";
+    }
 
 
+    static class Today implements Weather, WeatherType {
+        private String type;
 
-
-        public Robot(String s) {
-            this.name = s;
+        Today(String type) {
+            this.type = type;
         }
 
-    }
-
-    public interface Attackable {
-       public BodyPart attack();
-
-    }
-
-    public interface Defenseble {
-        public BodyPart defense();
-
-    }
-
-    public abstract static class AbstractRobot implements Attackable, Defenseble {
-        String name;
-        public String getName() {
-            return this.name;
+        @Override
+        public String toString() {
+            return String.format("Today it will be %s", this.getWeatherType());
+        }
+        @Override
+        public String getWeatherType() {
+            return type;
         }
 
-        public BodyPart attack() {
-            BodyPart a = new BodyPart();
-            return a;
-        }
-
-
-        public BodyPart defense() {
-            BodyPart a = new BodyPart();
-            return a;
-        }
-
-    }
-
-    public static class BodyPart {
-        final static BodyPart bodyPart = new BodyPart();
-    }
-
-    public static void doMove(AbstractRobot robotFirst, AbstractRobot robotSecond) {
-        BodyPart attacked = robotFirst.attack();
-        BodyPart defenced = robotFirst.defense();
-        System.out.println(String.format("%s атаковал робота %s, атакована %s, защищена %s",
-                robotFirst.getName(), robotSecond.getName(), attacked, defenced));
     }
 }
